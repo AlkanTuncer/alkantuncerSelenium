@@ -15,7 +15,7 @@ public class Driver_Metotlar_ImlicitlyWait {
 
         driver.manage().window().maximize();
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));   // Thread kullanmadan direkt saniyeyi girerek aralarda girilen saniye kadar bekletme.
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));   // Thread kullanmadan direkt saniyeyi girerek aralarda girilen saniye kadar bekletme.
 
         driver.get("https://www.futbin.com");
         driver.close();
