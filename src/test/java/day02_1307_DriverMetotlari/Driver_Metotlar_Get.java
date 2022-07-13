@@ -4,7 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Driver01_Metotlar_Get {
+public class Driver_Metotlar_Get {
     public static void main(String[] args) {
 
         // Her zaman yapıcaz - Demirbaşlar (:

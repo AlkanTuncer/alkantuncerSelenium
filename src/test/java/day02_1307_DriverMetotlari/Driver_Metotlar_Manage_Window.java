@@ -1,10 +1,12 @@
 package day02_1307_DriverMetotlari;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Driver03_Metotlar_Manage {
+public class Driver_Metotlar_Manage_Window {
     public static void main(String[] args) {
 
         // MANAGE - WINDOW METOTU
@@ -17,10 +19,14 @@ public class Driver03_Metotlar_Manage {
         /*
             driver.manage().window().maximize()    -> Browser'ı tam sayfa yapar. Maksimize eder.
             driver.manage().window().minimize()    -> Browser'ı simge durumuna küçültür. Minimize eder.
-            driver.manage().window().fullscreen()  -> Browser'ı tam ekran yapar.
-            driver.manage().window().getPosition() -> Browser'ımızın koordinatlarını String olarak verir.
-            driver.manage().window().getSize()     -> Browser'ın ölçülerini String olarak verir.
 
+            driver.manage().window().fullscreen()  -> Browser'ı tam ekran yapar.
+
+            driver.manage().window().getPosition() -> Browser'ımızın koordinatlarını String olarak verir.
+            driver.manage().window().setPosition() -> Browser'ımızı verdiğimiz koordinatlara getirir.
+
+            driver.manage().window().getSize()     -> Browser'ın ölçülerini String olarak verir.
+            driver.manage().window().setSize()     -> Browser'ın ölçülerini verdiğimiz ölçülere göre ayarlar.
          */
 
         try {
@@ -31,6 +37,10 @@ public class Driver03_Metotlar_Manage {
             driver.manage().window().maximize();    // maximize
             Thread.sleep(3000);
             driver.manage().window().fullscreen();  // fullscreen
+            Thread.sleep(3000);
+            driver.manage().window().setSize(new Dimension(945,1020));
+            Thread.sleep(3000);
+            driver.manage().window().setPosition(new Point(100,10));
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
