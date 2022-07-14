@@ -16,8 +16,6 @@ public class Driver_Metotlar_ImlicitlyWait {
         driver.manage().window().maximize();                                  // 16. ve 17. satırlar bizim kalıpla beraber her zaman yazıcaz.
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-
-
         driver.get("https://www.futbin.com");
         driver.close();
 
