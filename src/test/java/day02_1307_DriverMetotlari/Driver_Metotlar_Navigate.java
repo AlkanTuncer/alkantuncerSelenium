@@ -13,8 +13,10 @@ public class Driver_Metotlar_Navigate {
         driver.manage().window().maximize();  // Genelde çalışırken direkt max pencerede başlatıcaz.
 
         /*
-            driver.navigate().to()  -> driver.get() ile aynı işi yapar. Girilen siteye gider.
-            driver.navigate.back()  -> Browser'da geri gelir.
+            driver.navigate().to()    -> driver.get() ile aynı işi yapar. Girilen siteye gider.
+            driver.navigate.back()    -> Browser'da geri gelir.
+            driver.navigate.forward() -> Browser'da ileri gider.
+            driver.navigate.refresg() -> Browser'ımızı yenilemeye yarar.
          */
 
 
@@ -24,6 +26,8 @@ public class Driver_Metotlar_Navigate {
             driver.navigate().to("https://www.netflix.com");    // aynı sayfada netflix'e gitti.
             Thread.sleep(3000);
             driver.navigate().back();                               // sonra amazon'a geri döndü.
+            Thread.sleep(3000);
+            driver.navigate().forward();
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
