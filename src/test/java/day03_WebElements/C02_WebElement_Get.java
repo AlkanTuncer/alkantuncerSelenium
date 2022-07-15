@@ -30,6 +30,14 @@ public class C02_WebElement_Get {
         System.out.println("singInButton.getRect().width = " + singInButton.getRect().width); // Butonun genişliği.
         System.out.println("singInButton.getCssValue() = " + singInButton.getCssValue("color")); // Butonun rengini verir.
 
+        // WebElement Is Method’lari
+        //  webElement.isEnable( ); Web Element erisilebilir ise true yoksa false doner.
+        //  webElement.isDisplayed( ); Web Element gorunur ise true yoksa false doner.
+        //  webElement.isSelected( ); Web Element secili ise true yoksa false doner.
+
+        System.out.println("singInButton.isEnabled() = " + singInButton.isEnabled());
+        System.out.println("singInButton.isDisplayed() = " + singInButton.isDisplayed());
+        System.out.println("singInButton.isSelected() = " + singInButton.isSelected());
 
         try {
             Thread.sleep(5000);
