@@ -1,4 +1,4 @@
-package day04_XPath_CssSelector;
+package day04and05_XPath_CssSelector;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
