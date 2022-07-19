@@ -34,6 +34,12 @@ public class C02_Tekrar01 {
             System.out.println("Fail");
         }
 
+        if (driver.findElement(By.xpath("//*[.=\"Login Successful :) \"]")).isDisplayed()){
+            System.out.println("Pass");
+        }else{
+            System.out.println("Fail");
+        }
+
         //*  6. Textin içindeki "Click here to go back to the home page" !<"here">! tiklayın
         driver.findElement(By.xpath("//a[@href=\"index.html\"]")).click();
 
