@@ -42,10 +42,26 @@ public class C01_RelativeLocators {
         String actualBerlinRL2 = berlinRL2.getAttribute("id");
         String actualBerlinRL3 = berlinRL3.getAttribute("id");
 
-        System.out.println("expectedBerlin = " + expectedBerlin);
-        System.out.println("actualBerlinRL = " + actualBerlinRL);
-        System.out.println("actualBerlinRL2 = " + actualBerlinRL2);
-        System.out.println("actualBerlinRL3 = " + actualBerlinRL3);
+        //İlk locator için dogrulama.
+        if (expectedBerlin.equals(actualBerlinRL)){
+            System.out.println("BerlinRL - Relative Locator Test PASSED.");
+        }else {
+            System.out.println("BerlinRL - Relative Locator Test FAILED.");
+        }
+
+        //2.locator için dogrulama - id'e göre dogruluyoruz hepsinde
+        if (expectedBerlin.equals(actualBerlinRL2)){
+            System.out.println("BerlinRL2 - Relative Locator Test PASSED.");
+        }else {
+            System.out.println("BerlinRL2 - Relative Locator Test FAILED.");
+        }
+
+        //3.locator için dogrulama
+        if (expectedBerlin.equals(actualBerlinRL3)){
+            System.out.println("BerlinRL3 - Relative Locator Test PASSED.");
+        }else {
+            System.out.println("BerlinRL3 - Relative Locator Test FAILED.");
+        }
 
         driver.close();
 
