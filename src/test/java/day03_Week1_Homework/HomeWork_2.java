@@ -1,4 +1,4 @@
-package SeleniumWeek1_HW;
+package day03_Week1_Homework;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

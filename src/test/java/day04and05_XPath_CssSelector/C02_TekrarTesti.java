@@ -38,8 +38,7 @@ public class C02_TekrarTesti {
         giftCardsBtn.click();
 
         //Birthday butonuna basin
-        WebElement birthdayBtn = driver.findElement(By.xpath("//img[@alt='Birthday gift cards']"));
-        birthdayBtn.click();
+        driver.findElement(By.xpath("//img[@alt='Birthday gift cards']")).click();
 
         //Best Seller bolumunden ilk urunu tiklayin
         driver.findElement(By.xpath("//*[@id=\"acs-product-block-0\"]/div[1]/a/img")).click();
