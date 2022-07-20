@@ -49,6 +49,15 @@ public class C03_Test {
 
         WebElement usaRL = driver.findElement(RelativeLocator.with(By.tagName("img")).toRightOf(canada).toLeftOf(mexico));
 
+        String usaStr = usa.getAttribute("alt");
+        String usaRLStr = usaRL.getAttribute("alt");
+
+        if (usaRLStr.equals(usaStr)){
+            System.out.println("United States Relative Locator - Test PASSED.");
+        }else{
+            System.out.println("Test FAILED.");
+        }
+
         driver.close();
 
     }
