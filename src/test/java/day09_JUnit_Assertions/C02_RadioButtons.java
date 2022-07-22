@@ -13,10 +13,10 @@ import java.time.Duration;
 
 public class C02_RadioButtons {
 
-    // // //https://www.facebook.com/ adresine gidin
-    //    // //-“Create an Account” button’una basin
-    //    //  //-“radio buttons” elementlerini locate edin
-    //    //  //Secili degilse cinsiyet butonundan size uygun olani secin
+    // https://www.facebook.com/ adresine gidin
+    // “Create an Account” button’una basin
+    // “radio buttons” elementlerini locate edin
+    // Secili degilse cinsiyet butonundan size uygun olani secin
 
     private WebDriver driver;
 
