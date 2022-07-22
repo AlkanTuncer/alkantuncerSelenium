@@ -31,7 +31,7 @@ public class C02_RadioButtons {
 
     @Test
     public void test01(){
-        driver.findElement(By.xpath("//a[@class=\"_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy\"]")).click();
+        driver.findElement(By.linkText("Create New Account")).click();
         WebElement female = driver.findElement(By.xpath("(//label[@class=\"_58mt\"])[1]"));
         WebElement male = driver.findElement(By.xpath("(//label[@class=\"_58mt\"])[2]"));
         WebElement custom = driver.findElement(By.xpath("(//label[@class=\"_58mt\"])[3]"));
