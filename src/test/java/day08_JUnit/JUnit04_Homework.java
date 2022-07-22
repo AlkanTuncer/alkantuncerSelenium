@@ -15,7 +15,7 @@ public class JUnit04_Homework {
 
     // amazona gidilsin
     // arama butonuna nutella yazılsın
-    // title nutelle var mı kontrol edilsin
+    // title nutella var mı kontrol edilsin
     // amazona gidilsin
     // arama butonuna java yazılsın
     // title da java var mı kontrol edilsin
