@@ -23,7 +23,7 @@ public class JUnit04_Homework {
     // arama butonuna ali yazılsın
     // title da ali var mı kontrol edilsin
 
-    WebDriver driver;
+    private WebDriver driver;
 
     @Before
     public void testSetup(){
@@ -32,11 +32,11 @@ public class JUnit04_Homework {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         System.out.println("Driver çalışmaya başladı.");
+        driver.navigate().to("https://www.amazon.com/");
     }
 
     @Test
     public void testNutella(){
-        driver.navigate().to("https://www.amazon.com/");
         driver.findElement(By.xpath("//input[@id=\"twotabsearchtextbox\"]")).sendKeys("nutella", Keys.ENTER);
         if (driver.getTitle().contains("nutella")){
             System.out.println("Test PASSED - Title'da 'nutella' var.");
@@ -47,7 +47,6 @@ public class JUnit04_Homework {
 
     @Test
     public void testJava(){
-        driver.navigate().to("https://www.amazon.com/");
         driver.findElement(By.xpath("//input[@id=\"twotabsearchtextbox\"]")).sendKeys("java", Keys.ENTER);
         if (driver.getTitle().contains("java")){
             System.out.println("Test PASSED - Title'da 'java' var.");
@@ -58,7 +57,6 @@ public class JUnit04_Homework {
 
     @Test
     public void testAli(){
-        driver.navigate().to("https://www.amazon.com/");
         driver.findElement(By.xpath("//input[@id=\"twotabsearchtextbox\"]")).sendKeys("ali", Keys.ENTER);
         if (driver.getTitle().contains("ali")){
             System.out.println("Test PASSED - Title'da 'ali' var.");
