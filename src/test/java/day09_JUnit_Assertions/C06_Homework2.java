@@ -32,11 +32,6 @@ public class C06_Homework2 {
         driver.navigate().to("https://www.youtube.com/");
     }
 
-    @AfterClass
-    public static void tearDown(){
-        driver.close();
-    }
-
     @Test
     public void testTitle(){
         Assert.assertEquals("Test PASSED - Title", "YouTube", driver.getTitle());
@@ -57,6 +52,11 @@ public class C06_Homework2 {
     @Test
     public void testWrongTitle(){
         Assert.assertNotEquals("youtube", driver.getTitle());
+    }
+
+    @AfterClass
+    public static void tearDown(){
+        driver.close();
     }
 
 }
