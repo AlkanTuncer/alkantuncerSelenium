@@ -13,7 +13,6 @@ import java.time.Duration;
 
 public class JUnit05_Homework_Tekrar {
 
-    //todo
     // amazona gidilsin
     // arama butonuna nutella yazılsın
     // title nutelle var mı kontrol edilsin
@@ -36,7 +35,6 @@ public class JUnit05_Homework_Tekrar {
         driver.navigate().to("https://www.amazon.com/");
         WebElement arama= driver.findElement(By.xpath("//input[@id=\"twotabsearchtextbox\"]"));
         System.out.println("Driver çalışmaya başladı.");
-
 
     }
 
